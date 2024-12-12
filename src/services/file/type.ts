@@ -7,6 +7,6 @@ export interface IFileService {
   ): Promise<{ id: string; url: string }>;
   getFile(id: string): Promise<FileItem>;
   removeAllFiles(): Promise<any>;
-  removeFile(id: string): Promise<any>;
-  removeFiles(ids: string[]): Promise<any>;
+  removeFile(id: string): Promise<void>;
+  removeFiles(ids: string[]): Promise<void>;
 }
